@@ -146,6 +146,8 @@ const PostPage = () => {
                  style={{ maxWidth: '40%', height: '10%' }}
                   />
 
+{/* http://localhost:53719/api/ReactJsApis/GetImage?imageName=1_07dc3403-9c1f-4686-b7da-55e368d77345.png */}
+
                 </div>
                 <CardText dangerouslySetInnerHTML={{ __html: post.Content }} className="mt-2" />
               </CardBody>
