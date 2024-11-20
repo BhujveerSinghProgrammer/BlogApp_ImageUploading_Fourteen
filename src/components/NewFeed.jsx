@@ -28,8 +28,7 @@ function NewFeed() {
     //Note:- postContent.TotalPages is greater than 0 and "pageNumber" is greater than "postContent.TotalPages" then return the function,
     //Note:-if we want this "pageNumber > postContent.TotalPages" condition true and then return,then
     //we will use it with "postContent.TotalPages>0" condition becoz on initial load "TotalPages" will be zero.
-
-
+    
     if (postContent.TotalPages > 0 && pageNumber > postContent.TotalPages) {
       return;
     }
