@@ -1,0 +1,36 @@
+UPLOADING IMAGE IN REACT JS STEPS:-
+______________________________________________________________________________________________________________
+Sample:-
+=>open react strap -->search Form-->check for file
+=>Components-->AddPost.jsx:-
+import {Input} from "reactstrap";
+ <div className="mt-3">
+  <Label for="image">Select Post Banner</Label>
+      <Input id="image" type="file"/>
+ </div>
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Steps:-
+
+==>First we will create a Input with type="file" in our design from react strap
+==>then we will create a service to Post the image from react to sql server dsatabase
+==>then after insert we will call this service
+
+Full code:-
+
+
+post-service.js:-
+
+//upload post banner images
+export const uploadPostImage=(image,postId)=>
+{
+  let formData=new FormData()
+  formData.append("image",image);
+   return privateAxious.post('/api/ReactJsApis/PostImage/?Id=${postId}',formData).then((response)=>response.data);
+
+};
+
+
+
+
+
+
